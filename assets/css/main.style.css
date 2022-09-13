@@ -1,4 +1,5 @@
 @import url(font.css);
+@import url(scroll-sus.css);
 
 
 * {
@@ -72,4 +73,17 @@ nav .btn {
     padding: .3rem .2rem;
     border-radius: 5px;
     background-color: rgb(89, 211, 95);
+}
+
+
+@media screen and (max-width: 400px) {
+    main {
+        width: 100%;
+        margin: 0;
+    }
+
+    #dis {
+        border-radius: 5px;
+        background-color: rgba(255, 30, 0, 0.01);
+    }
 }
