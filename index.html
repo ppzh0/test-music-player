@@ -3,42 +3,54 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Player</title>
-    <link rel="shortcut icon" href="fav.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/main.style.css">
-</head>
-<body>
-    <section id="body">
-        <!-- Nav Section starts -->
-        <nav>
-            <a href="index.html" title="Music: a place to live in."><img class="logo" src="./assets/img/fav.png"
-                    alt="Home"></a>
-            <a class="btn" href="pages/index.html" target="viewPort">Open List</a>
-            <a class="btn" href="pages/about.html" target="viewPort">About</a>
-        </nav>
-        <!-- Nav Section ends -->
-        <!-- Frame section starts -->
-        <main>
-            <iframe style="border-radius: 10px;" title="Video Player" name="viewPort" src="pages/index.html" frameborder="0"
-                allow="autoplay" allowfullscreen></iframe>
-        </main>
-        <!-- Frame section ends -->
-        <!-- disclaimer -->
-        <article style="text-align: center;">
-            <div id="dis">
-                <h2 style="margin-top: calc(10rem + 50px + 2vh);">Disclaimer</h2>
-                <p class="f-EDU" style="z-index: 1;background-color: #00000023; padding: 5px;border-radius: 5px;">
-                    This website is used to play music videos. All the contents are held by their respective owners.<br>
-                    I don't own any of these videos. If you
-                    fond something <span style="color: #f00;font-weight: bold;">Copyright</span>, <br> you can contact
-                    me at <a href="mailto:narrator06@gmail.com">narrator06@gmail.com</a> to remove the content.
-                </p>
-            </div>
-        </article>
-    </section>
+    <title>The Experimental Music Player</title>
 
+    <!-- meta data -->
+    <meta name="author" content="ppzh0">
+    <meta name="description"
+        content="Try using this experimental music player! Probably won't work for the first time!">
+    <meta name="keywords" content="music, player, music player, experimental, video, playback, iframe">
+
+    <!-- assets -->
+    <link rel="stylesheet" href="assets/style.css">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <nav>
+        <div>
+            <img width="30px" height="30px" src="assets/img/fav.png" alt="The-Little-Image">
+        </div>
+        <a href="list.html" target="_player">Index</a>
+        <a href="about.html" target="_player">About</a>
+        <a href="https://github.com/ppzh0/test-music-player" target="_blank">Repository</a>
+    </nav>
+    <main>
+        <iframe title="noTitle" name="_player" src="list.html" frameborder="0" allow="autoplay"
+            allowfullscreen></iframe>
+    </main>
+    <footer>
+        <h2>Disclaimer</h2>
+        <p>
+            I do not own the videos. If you're the rightful owner and want to take them down, contact me on Telegram.
+            Username: <a href="https://t.me/ppzh0" target="_blank" rel="noopener noreferrer">@ppzh0</a>
+        </p>
+        <hr>
+        <h3>Watch YouTube without round borders!</h3>
+        <p>
+            Some videos may not be able to play on this website. I don&OpenCurlyQuote;t know how YouTube embed sharing works. They do
+            put a share button and embed option but some videos are still not playable in iframe.
+        </p>
+    </footer>
 </body>
 
 </html>
